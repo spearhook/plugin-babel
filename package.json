@@ -1,0 +1,11 @@
+{
+  "name": "@spearhook/plugin-babel",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "viveleroi",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "through2": "^2.0.3"
+  }
+}
