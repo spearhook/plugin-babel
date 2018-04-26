@@ -3,7 +3,7 @@ const through2 = require('through2');
 
 module.exports = function(opts) {
     return () => {
-        return through2.obj(function(file, encoding, cb) {
+        return through2.obj(function(file, encoding, cb) => {
             if (file.isNull()) {
                 // nothing to do
                 return cb(null, file);
