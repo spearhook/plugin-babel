@@ -12,7 +12,7 @@ module.exports = function(opts) {
             try {
                 const result = babel.transform(file.contents.toString(), opts);
 
-                file.contents = new Buffer(result.code);
+                file.contents = Buffer.from(result.code);
             } catch (err) {
                 this.emit('spearhook:error', { err, file });
             }
