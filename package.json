@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "main": "index.js",
   "author": "viveleroi",
+  "type": "module",
   "license": "MIT",
   "peerDependencies": {
     "@babel/core": "^7.x"

@@ -1,7 +1,7 @@
-const babel = require('@babel/core');
-const through2 = require('through2');
+import babel from '@babel/core';
+import through2 from 'through2';
 
-module.exports = function(opts) {
+export default function(opts) {
     return () => through2.obj(function(file, encoding, cb) {
         if (file.isNull()) {
             // nothing to do
